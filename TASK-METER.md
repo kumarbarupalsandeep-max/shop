@@ -71,7 +71,7 @@ A phase counts as complete only after deliverables, verification evidence and re
 - [x] Added a compliance-readiness document covering consumer disclosures, grievance handling, search/sponsored placement, price reductions, invoices, imported goods, GST and DPDP staging.
 
 ### Revised Phase 01 work status
-- Planning/research artefacts created: **10 of 12 workstreams have draft/research artefacts** (P01-01 through P01-06, plus draft deliverables for P01-09, P01-10 and research inputs for P01-11). P01-07, P01-08 and P01-12 still need owner decisions or sign-off; policy approvals in P01-11 remain pending.
+- Planning/research artefacts created: **9 of 12 workstreams have draft/research artefacts** (P01-01 through P01-06, plus draft deliverables for P01-09, P01-10 and research inputs for P01-11). P01-07, P01-08 and P01-12 still need owner decisions or sign-off; policy approvals in P01-11 remain pending.
 - Formal Phase 01 approval: **Pending**. Draft documents are not approvals.
 
 ### Remaining approval / evidence gates
