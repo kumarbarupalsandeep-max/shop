@@ -87,3 +87,12 @@ The stack is a planning baseline, not a claim that production infrastructure is 
 - [Prototype interactions](./design-system/prototypes/prototype.js)
 - [Prototype QA record and limitations](./design-system/PROTOTYPE-QA.md)
 - [Phase 02 plan](./design-system/PHASE-02-PLAN.md)
+
+
+## Phase 03 — Platform and Engineering Foundation
+- [Phase 03 foundation plan](./PHASE-03-FOUNDATION-PLAN.md)
+- [Local environment template](./.env.example)
+- [Local PostgreSQL service](./docker-compose.yml)
+- [Frontend workspace](./frontend/app/page.tsx)
+- [NestJS API health controller](./backend/src/health/health.controller.ts)
+- [Database migration policy](./db/migrations/README.md)
