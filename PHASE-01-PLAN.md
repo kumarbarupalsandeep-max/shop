@@ -243,3 +243,9 @@ Phase 01 can be marked complete only when:
 - [India Compliance and Operational Readiness](./research/INDIA-COMPLIANCE-READINESS.md) — official Gazette/CBIC/MeitY research baseline; professional review pending.
 
 These documents advance planning but do not close Phase 01 approval gates. Product-specific values, policies, tax codes and legal applicability must be confirmed by the appropriate business owner/advisor.
+
+
+## 14. Technical architecture and quality baseline
+- [Technical Architecture and Decision Records](./planning/TECHNICAL-ARCHITECTURE-ADRS.md) — proposed system topology, ADRs, module boundaries, API conventions and deployment environments; engineering approval pending.
+- [Non-Functional Requirements](./planning/NON-FUNCTIONAL-REQUIREMENTS.md) — performance, availability, recovery, security, privacy, accessibility, data integrity and release gates; target values require owner approval.
+
