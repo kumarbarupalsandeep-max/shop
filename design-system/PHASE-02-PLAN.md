@@ -31,10 +31,10 @@ Produce an original, accessible, responsive and implementation-ready design syst
 | P02-06 | Admin wireframes | Dashboard, catalogue, inventory, orders, delivery | Draft complete |
 | P02-07 | Responsive system | Breakpoints and layout behavior | Draft complete; visual testing pending |
 | P02-08 | Accessibility | WCAG-oriented interaction standards | Draft complete; audit pending |
-| P02-09 | Design QA | Annotated visual states and screenshot evidence | Not started |
-| P02-10 | Approval and handoff | Approved brand direction, design sign-off and dev handoff | Pending owner input |
+| P02-09 | Design QA | [Prototype + source QA record](./PROTOTYPE-QA.md) | Prototype draft and source checks complete; browser/screenshot QA pending |
+| P02-10 | Approval and handoff | Approved brand direction, design sign-off and dev handoff | Pending owner input and QA evidence |
 
-## Deliverables
+## Interactive prototype\n- [Open the storefront and admin prototype](./prototypes/index.html)\n- [Prototype QA record](./PROTOTYPE-QA.md)\n\n## Deliverables
 - Benchmark research: ../research/PHASE-02-DESIGN-BENCHMARKS.md
 - Design tokens: ./tokens.css
 - Component library: ./COMPONENT-LIBRARY.md
