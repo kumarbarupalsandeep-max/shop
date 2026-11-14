@@ -46,3 +46,7 @@ Research date: 14 November 2026. Purpose: extract broad UX patterns for an origi
 - Visible-page UX audit only; not a full accessibility, performance, checkout, legal or security audit.
 - Site content can change; recheck before final design approval.
 - Golfoy was inaccessible in this run and requires a separate review.
+
+## Accessibility standard reference
+- W3C, Web Content Accessibility Guidelines (WCAG) 2.2 Recommendation: https://www.w3.org/TR/wcag/ — use the normative success criteria for audit; supporting quick-reference material is guidance, not a replacement for the standard.
+- WCAG 2.2 includes additional success criteria beyond WCAG 2.1. The project targets WCAG 2.2 AA as a design baseline; conformance is not claimed until evaluated.
