@@ -96,3 +96,9 @@ The stack is a planning baseline, not a claim that production infrastructure is 
 - [Frontend workspace](./frontend/app/page.tsx)
 - [NestJS API health controller](./backend/src/health/health.controller.ts)
 - [Database migration policy](./db/migrations/README.md)
+
+
+## Current active work
+- **Phase 03 — Platform and Engineering Foundation:** source scaffold committed; CI build correction is being verified. Dependency audit and runtime checks remain open.
+- **Phase 04 — Product Catalog and Storefront:** planning started; see [Phase 04 plan](./PHASE-04-CATALOG-AND-STOREFRONT-PLAN.md). Catalog implementation has not yet been marked complete.
+- [Task meter and verification evidence](./TASK-METER.md)
