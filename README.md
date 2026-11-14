@@ -102,3 +102,14 @@ The stack is a planning baseline, not a claim that production infrastructure is 
 - **Phase 03 — Platform and Engineering Foundation:** source scaffold committed; CI build correction is being verified. Dependency audit and runtime checks remain open.
 - **Phase 04 — Product Catalog and Storefront:** planning started; see [Phase 04 plan](./PHASE-04-CATALOG-AND-STOREFRONT-PLAN.md). Catalog implementation has not yet been marked complete.
 - [Task meter and verification evidence](./TASK-METER.md)
+
+
+## Phase 04 — Product Catalog and Storefront
+- [Phase 04 plan and status](./PHASE-04-CATALOG-AND-STOREFRONT-PLAN.md)
+- [Catalog API](./backend/src/catalog/)
+- [Catalog database migrations](./db/migrations/)
+- [Storefront home](./frontend/app/page.tsx)
+- [Product listing/search](./frontend/app/shop/page.tsx)
+- [Product detail](./frontend/app/product/[slug]/page.tsx)
+- [Catalog import template](./catalog/import-template.csv)
+- [Overall task meter](./TASK-METER.md)
