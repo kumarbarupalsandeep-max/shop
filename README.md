@@ -18,7 +18,7 @@ A single-vendor golf e-commerce platform for the India market.
 | # | Phase | Status |
 |---|---|---|
 | 01 | Project Planning and Architecture | In progress |
-| 02 | UI/UX and Brand Design System | Not started |
+| 02 | UI/UX and Brand Design System | In progress |
 | 03 | Platform and Engineering Foundation | Not started |
 | 04 | Product Catalog and Storefront | Not started |
 | 05 | Customer Accounts and Commerce Core | Not started |
@@ -70,3 +70,12 @@ The stack is a planning baseline, not a claim that production infrastructure is 
 - [Security Threat Model](./planning/SECURITY-THREAT-MODEL.md)
 - [Data Classification and Retention Plan](./planning/DATA-CLASSIFICATION-RETENTION.md)
 - [Conceptual Data Model](./planning/CONCEPTUAL-DATA-MODEL.md)
+
+
+## Phase 02 — UI/UX and Brand Design System
+- [Phase 02 Plan](./design-system/PHASE-02-PLAN.md)
+- [Design Tokens](./design-system/tokens.css)
+- [Component Library](./design-system/COMPONENT-LIBRARY.md)
+- [Page Wireframes](./design-system/PAGE-WIREFRAMES.md)
+- [Responsive and Accessibility Standards](./design-system/RESPONSIVE-ACCESSIBILITY.md)
+- [Design Benchmark Research](./research/PHASE-02-DESIGN-BENCHMARKS.md)
