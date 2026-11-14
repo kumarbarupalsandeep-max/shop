@@ -30,17 +30,20 @@ export class CatalogService {
     const values: CatalogQueryValue[] = [];
     if (category) {
       values.push(category);
-      where.push(`c.slug = $\${values.length}`);
+      where.push('c.slug = $' + values.length);
     }
     if (search) {
       values.push(search);
-      where.push(`(p.title ILIKE '%' || $\${values.length} || '%' OR p.short_description ILIKE '%' || $\${values.length} || '%')`);
+      const parameter = '$' + values.length;
+      where.push("(p.title ILIKE '%' || " + parameter + " || '%' OR p.short_description ILIKE '%' || " + parameter + " || '%')");
     }
     const clause = where.join(' AND ');
     const count = await this.database.query<{ total: string }>(
       `SELECT count(*)::text AS total FROM products p JOIN categories c ON c.id = p.category_id WHERE ${clause}`,
       values,
     );
+    const limitParameter = '$' + (values.length + 1);
+    const offsetParameter = '$' + (values.length + 2);
     const rows = await this.database.query(
       `SELECT p.id, p.slug, p.title, p.short_description,
               c.slug AS category_slug, c.name AS category_name,
@@ -79,13 +82,14 @@ export class CatalogService {
        ) inventory ON true
        WHERE ${clause}
        ORDER BY ${sort}
-       LIMIT $\${values.length + 1} OFFSET $\${values.length + 2}`,
+       LIMIT ${limitParameter} OFFSET ${offsetParameter}`,
       [...values, limit, offset],
     );
 
+    const total = Number(count.rows[0]?.total ?? 0);
     return {
       data: rows.rows,
-      pagination: { page, limit, total: Number(count.rows[0]?.total ?? 0), totalPages: Math.ceil(Number(count.rows[0]?.total ?? 0) / limit) },
+      pagination: { page, limit, total, totalPages: Math.ceil(total / limit) },
     };
   }
 
