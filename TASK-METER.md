@@ -86,3 +86,25 @@ A phase counts as complete only after deliverables, verification evidence and re
 9. Confirm hosting, storage, CDN, messaging vendors, budget and launch target.
 10. Legal/privacy review and named owner for Consumer E-Commerce Rules 2026 readiness and DPDP staged commencement.
 11. Approve page inventory, measurable acceptance criteria and Phase 01 exit sign-off.
+
+
+## Additional Phase 01 architecture work
+- [x] Draft logical system architecture, deployment topology and nine architecture decision records.
+- [x] Draft API module boundaries, versioning, security, pagination, idempotency and endpoint outline.
+- [x] Draft non-functional requirements for performance, availability, recovery, security, privacy, accessibility, data integrity and observability.
+- [x] Define release acceptance gates and identify service-level targets requiring business approval.
+
+**Artefact progress:** 11 of 12 Phase 01 workstreams now have draft/research artefacts. This is a documentation-progress count only; approvals, actual inventory validation and business policies remain outstanding. Formal Phase 01 completion remains pending.
+
+### Remaining Phase 01 blockers
+- Brand/legal identity and domain approval.
+- New-only vs pre-owned decision; confirm clubs/package sets and first sellable inventory list.
+- Validate taxonomy, variants and SKU convention against actual supplier/product data.
+- Named staff owners and approved permission/segregation thresholds.
+- Delivery zones, operating hours, fees, ETA, proof-of-delivery and COD cash controls.
+- Gateway selection, payment/refund/reconciliation rules.
+- Accountant-approved GSTIN, HSN, tax, invoice and e-invoice applicability.
+- Approved return, exchange, cancellation, refund and warranty policy.
+- Hosting/provider, budget, launch target, RPO/RTO and performance targets.
+- Legal/privacy review and implementation owner for 2026 E-Commerce Rules and DPDP staged commencement.
+- Business approval of page inventory, acceptance criteria and Phase 01 exit sign-off.
