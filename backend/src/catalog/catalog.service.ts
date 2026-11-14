@@ -47,7 +47,7 @@ export class CatalogService {
               b.name AS brand_name,
               price.amount_paise, price.currency,
               CASE
-                WHEN inventory.variant_count IS NULL THEN 'not_configured'
+                WHEN inventory.balance_count = 0 THEN 'not_configured'
                 WHEN inventory.available_qty > 0 THEN 'in_stock'
                 ELSE 'out_of_stock'
               END AS availability_status
@@ -71,7 +71,7 @@ export class CatalogService {
          LIMIT 1
        ) price ON true
        LEFT JOIN LATERAL (
-         SELECT count(*)::integer AS variant_count,
+         SELECT count(ib.id)::integer AS balance_count,
                 coalesce(sum(ib.on_hand_qty - ib.reserved_qty), 0)::integer AS available_qty
          FROM product_variants pv
          LEFT JOIN inventory_balances ib ON ib.variant_id = pv.id
@@ -105,12 +105,12 @@ export class CatalogService {
     const product = result.rows[0];
     const [media, variants] = await Promise.all([
       this.database.query(
-        'SELECT id, storage_key, alt_text, media_type, sort_order FROM product_media WHERE product_id = $1 ORDER BY sort_order ASC',
+        'SELECT id, alt_text, media_type, sort_order FROM product_media WHERE product_id = $1 ORDER BY sort_order ASC',
         [product.id],
       ),
       this.database.query(
         `SELECT pv.id, pv.option_values, price.amount_paise, price.currency,
-          CASE WHEN inventory.variant_count IS NULL THEN 'not_configured'
+          CASE WHEN inventory.balance_count = 0 THEN 'not_configured'
                WHEN inventory.available_qty > 0 THEN 'in_stock' ELSE 'out_of_stock' END AS availability_status
          FROM product_variants pv
          LEFT JOIN LATERAL (
@@ -120,7 +120,7 @@ export class CatalogService {
            ORDER BY pvp.effective_from DESC LIMIT 1
          ) price ON true
          LEFT JOIN LATERAL (
-           SELECT count(*)::integer AS variant_count,
+           SELECT count(ib.id)::integer AS balance_count,
                   coalesce(sum(ib.on_hand_qty - ib.reserved_qty), 0)::integer AS available_qty
            FROM inventory_balances ib WHERE ib.variant_id = pv.id
          ) inventory ON true
