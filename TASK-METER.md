@@ -54,3 +54,9 @@ A phase counts as complete only after deliverables, verification evidence and re
 - Do not start dependent implementation that would hard-code unresolved business rules.
 - Update this meter whenever a verifiable deliverable is added.
 - Show completed, pending, blocked and reason separately.
+
+
+## Latest research update
+- [x] Second-pass Golfoy review: customer program, gift cards, trade-in, custom products, advanced bag filters, specialist golf equipment.
+- [x] Added verified Golfoy source URLs and separated competitor claims from independent facts.
+- [x] Updated the reference-site audit with implications for scope and P1/later modules.
