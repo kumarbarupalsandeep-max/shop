@@ -10,6 +10,11 @@ export class CatalogController {
     return this.catalog.categories();
   }
 
+  @Get('facets')
+  facets(@Query('category') category?: string) {
+    return this.catalog.facets(category);
+  }
+
   @Get('products')
   products(
     @Query('page') page?: string,
