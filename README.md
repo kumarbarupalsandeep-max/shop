@@ -66,3 +66,7 @@ The stack is a planning baseline, not a claim that production infrastructure is 
 - [Page Inventory and Acceptance Criteria](./planning/PAGE-INVENTORY-ACCEPTANCE.md)
 - [Brand and Launch Scope Decision Pack](./planning/BRAND-AND-LAUNCH-SCOPE-DECISIONS.md)
 - [Hosting, Budget and Operations Options](./planning/HOSTING-BUDGET-OPERATIONS-OPTIONS.md)
+
+- [Security Threat Model](./planning/SECURITY-THREAT-MODEL.md)
+- [Data Classification and Retention Plan](./planning/DATA-CLASSIFICATION-RETENTION.md)
+- [Conceptual Data Model](./planning/CONCEPTUAL-DATA-MODEL.md)
