@@ -222,3 +222,43 @@ Phase 01 remains approval-gated. Its documented decision list and business appro
 
 ### Safety boundary
 The prototype uses a fictional placeholder brand and illustrative product names/prices. Cart actions are local demo interactions only. Checkout submission, payment, authentication, order creation, inventory and admin authorization are not connected. Do not treat the prototype as production commerce.
+
+
+## Phase 03 — Platform and Engineering Foundation (updated 14 November 2026)
+**Status:** In progress. Source scaffold has been committed to the repository; no local runtime, Docker, browser, build or CI execution evidence has been collected yet.
+
+### Deliverables
+- [Phase 03 plan and definition of done](./PHASE-03-FOUNDATION-PLAN.md)
+- [Root npm workspace](./package.json), [frontend workspace](./frontend/package.json), [backend workspace](./backend/package.json)
+- [Next.js storefront shell](./frontend/app/page.tsx) and [responsive styles](./frontend/app/globals.css)
+- [NestJS API bootstrap](./backend/src/main.ts), [health endpoints](./backend/src/health/health.controller.ts) and [PostgreSQL connection check](./backend/src/database/database.service.ts)
+- [Docker Compose PostgreSQL](./docker-compose.yml), [.env.example](./.env.example), [migration policy](./db/migrations/README.md)
+- [GitHub Actions CI workflow](./.github/workflows/ci.yml)
+
+### Phase 03 task meter
+| ID | Workstream | Evidence | Status |
+|---|---|---|---|
+| P03-01 | Repository/workspaces | [Root package](./package.json), frontend/backend folders | Scaffold committed |
+| P03-02 | Runtime/dependency baseline | Workspace package manifests and TypeScript configs | Draft committed; install/audit pending |
+| P03-03 | Environment/secrets hygiene | [.env.example](./.env.example), [.gitignore](./.gitignore) | Draft committed; secret scan pending |
+| P03-04 | Local PostgreSQL | [docker-compose.yml](./docker-compose.yml) | Committed; Docker execution pending |
+| P03-05 | API foundation | [NestJS bootstrap](./backend/src/main.ts) | Committed; runtime pending |
+| P03-06 | Health/readiness | [Health controller](./backend/src/health/health.controller.ts) | Committed; DB integration pending |
+| P03-07 | Storefront shell | [Next.js page](./frontend/app/page.tsx) | Committed; browser/build pending |
+| P03-08 | Migration strategy | [Migration policy](./db/migrations/README.md) | Documented; tool decision pending |
+| P03-09 | CI foundation | [GitHub Actions](./.github/workflows/ci.yml) | Workflow committed; execution pending |
+| P03-10 | Quality/security gates | Typecheck/build/lint scripts and CI job | Scaffolded; all checks pending |
+
+**Scaffold coverage:** 10/10 workstreams have a starter artifact (100% scaffold coverage). **Verified execution: 0/10.** Phase 03 is not complete. Do not confuse committed source files with tested functionality.
+
+### Required verification before Phase 03 can close
+1. Run npm install on supported Node/npm and commit lockfile.
+2. Fix any dependency, TypeScript, lint or build failures; record successful CI run.
+3. Start PostgreSQL with Docker Compose and verify its healthcheck.
+4. Start API; verify liveness HTTP 200, DB readiness HTTP 200, and DB-down readiness HTTP 503.
+5. Start Next.js and inspect desktop/mobile browser rendering.
+6. Run dependency and secret scans and review all findings.
+7. Approve stack, migration tool, environment separation and operational ownership.
+8. Record engineering sign-off.
+
+**Known boundary:** no production credentials, real customer records, payment gateway, authentication, order processing, production migrations or deployment provider has been added.
