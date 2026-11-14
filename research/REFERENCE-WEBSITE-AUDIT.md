@@ -105,3 +105,22 @@ Recommended P0 planning baseline (requires owner approval):
 - No competitor revenue, conversion, traffic or customer satisfaction claims are made.
 - Competitor policies must not be copied as this project's policy.
 - Every launch policy must be approved for the actual business and reviewed by relevant legal/tax advisors.
+
+
+## 8. Additional Golfoy detail verified in a second source pass
+Sources:
+- https://golfoy.com/about-golfoy
+- https://golfoy.com/
+- https://golfoy.com/golf-accessories.html
+- https://golfoy.com/bags.html
+- https://golfoy.com/custom-golf-gears
+
+Additional observations:
+- Golfoy describes a customer rewards program where account holders earn redeemable Golf Bucks; its current site footer also links to gift cards, trade-in, bulk orders and dealer enquiries.
+- The catalog includes specialist golf equipment such as grips, rangefinders, trolleys, simulator screens, performance wearables, and golf gifts, beyond the five initial categories in this project's confirmed brief.
+- Product listing pages expose rating/review counts, MRP, deal price, savings, quantity and wishlist controls.
+- Bag filters include brand, construction, feel, colour, divider count, pockets, price and express-shipping availability.
+- Custom product pages show personalization options for balls, apparel, headwear, umbrellas, bags and accessories; this implies a customization workflow and proof/approval requirements if ever adopted.
+- The About page makes claims about company history, customers and product counts; these are competitor self-reported statements and are not independently validated here.
+
+Project implication: do not copy the competitor's product range or rewards promise. Use these observations to create an approved category-specific filter matrix. Treat customization, loyalty, gift cards, trade-in, bulk orders and dealer workflows as separate optional modules, not automatic P0 scope.
