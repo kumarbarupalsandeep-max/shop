@@ -132,3 +132,26 @@ The Phase 01 workstream IDs P01-01 through P01-12 remain the formal meter. The n
 9. Compare hosting quotes; approve budget, technical owner, RPO/RTO, uptime and performance targets.
 10. Legal/privacy review and accountable owner for applicable E-Commerce Rules 2026 and DPDP obligations.
 11. Approve final page list, acceptance tests, support hours and Phase 01 exit sign-off.
+
+
+## Additional Phase 01 security and data-model work — 14 November 2026
+- [x] Created security threat model with trust boundaries, abuse scenarios, mitigations and verification plan.
+- [x] Created data classification, data inventory, lifecycle and retention decision register.
+- [x] Created conceptual entity relationship and integrity-constraint model for catalogue, identity, inventory, orders, payments, delivery and audit.
+
+**Documentation coverage:** 12 / 12 Phase 01 workstreams now have a documented baseline, research input or explicit decision/approval register. This is 100% documentation coverage only — not 100% Phase 01 completion.
+
+**Formal Phase 01 status:** In progress / approval-gated. The business decisions, advisor reviews, technical validation and recorded sign-off listed below remain open. No dependent production implementation has been falsely marked complete.
+
+### Remaining phase exit gates
+1. Business owner confirms legal seller identity, customer-facing brand, logo, domain and design approver.
+2. Business owner confirms new-only/pre-owned scope, clubs and first actual product inventory list.
+3. Inventory owner validates category attributes, variant options, SKU rules and product source data.
+4. Business/security owners approve staff roles, named users, privilege thresholds and separation of duties.
+5. Operations owner approves delivery zones, fees/ETA, delivery hours, proof method and COD handling or explicitly excludes COD.
+6. Business/finance selects payment gateway and approves payment, refund, settlement and reconciliation workflows.
+7. Accountant approves GST registration, HSN, tax configuration, invoice numbering and e-invoice applicability.
+8. Business/legal approves cancellation, shipping, returns, exchange, refund, warranty and grievance policies.
+9. Technical owner compares current hosting quotes and approves budget, provider, backup, RPO/RTO, uptime and performance targets.
+10. Privacy/legal owner approves privacy notice, data purposes, retention schedule, rights handling, processors and incident obligations.
+11. Product owner approves final customer/admin page inventory, measurable acceptance tests and Phase 01 exit sign-off.
