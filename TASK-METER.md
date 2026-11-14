@@ -108,3 +108,27 @@ A phase counts as complete only after deliverables, verification evidence and re
 - Hosting/provider, budget, launch target, RPO/RTO and performance targets.
 - Legal/privacy review and implementation owner for 2026 E-Commerce Rules and DPDP staged commencement.
 - Business approval of page inventory, acceptance criteria and Phase 01 exit sign-off.
+
+
+## Latest Phase 01 work — 14 November 2026
+- [x] Created customer storefront and admin page inventory with measurable acceptance checks.
+- [x] Created a brand identity and launch assortment decision pack.
+- [x] Created hosting/deployment options, vendor selection criteria, budget worksheet and operations ownership register.
+
+### Workstream reconciliation
+The Phase 01 workstream IDs P01-01 through P01-12 remain the formal meter. The new documents provide supporting detail for P01-03, P01-04, P01-07, P01-08, P01-11 and P01-12; they do not add extra completed workstreams or count as owner approvals.
+
+**Document/research coverage:** all 12 workstreams now have a documented baseline, research input, or explicit decision register. **Formal Phase 01 completion: still pending.** P01-07, P01-08, P01-09, P01-10, P01-11 and P01-12 still require applicable owner/advisor validation or approval; the others also require formal phase sign-off and evidence.
+
+### Outstanding owner inputs
+1. Legal seller name, public brand name, logo, domain and brand approver.
+2. New-only vs pre-owned; confirm clubs, junior range, personalization and actual first-stock list.
+3. Validate category attributes and SKU/variant rules against supplier data.
+4. Name role owners; approve publish, stock adjustment, cancellation, refund and export permissions.
+5. Confirm delivery area, hours, fee/ETA, proof-of-delivery and COD cash reconciliation.
+6. Select payment provider and approve webhook, refund and settlement reconciliation process.
+7. Accountant approval for GST registration, HSN, tax categories, invoice and e-invoice applicability.
+8. Approve shipping, cancellation, return, exchange, refund and warranty policy.
+9. Compare hosting quotes; approve budget, technical owner, RPO/RTO, uptime and performance targets.
+10. Legal/privacy review and accountable owner for applicable E-Commerce Rules 2026 and DPDP obligations.
+11. Approve final page list, acceptance tests, support hours and Phase 01 exit sign-off.
