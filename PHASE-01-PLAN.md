@@ -257,3 +257,10 @@ These documents advance planning but do not close Phase 01 approval gates. Produ
 - [Hosting, Budget and Operations Options](./planning/HOSTING-BUDGET-OPERATIONS-OPTIONS.md) — deployment options, vendor comparison criteria, budget worksheet and operations ownership.
 
 These are planning artefacts, not proof of selected providers, approved brand assets, confirmed budgets or business sign-off.
+
+
+## 16. Security, privacy and data model detail
+- [Security Threat Model](./planning/SECURITY-THREAT-MODEL.md) — assets, trust boundaries, abuse cases, mitigations and security test plan; implementation evidence is a later gate.
+- [Data Classification and Retention Plan](./planning/DATA-CLASSIFICATION-RETENTION.md) — data inventory, access classes, lifecycle, retention decisions and rights-request workflow; retention durations require legal/business approval.
+- [Conceptual Data Model](./planning/CONCEPTUAL-DATA-MODEL.md) — entity groups, relationships, integrity constraints and unresolved schema decisions; not a production schema or migration.
+
