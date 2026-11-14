@@ -3,9 +3,29 @@ on:
   push:
     branches: [main]
   pull_request:
+
 jobs:
   verify:
     runs-on: ubuntu-latest
+    env:
+      NODE_ENV: test
+      API_PORT: 3001
+      CORS_ORIGIN: http://localhost:3000
+      DATABASE_URL: postgresql://golf_app:golf_test_only@localhost:5432/golf_commerce
+    services:
+      postgres:
+        image: postgres:16-alpine
+        env:
+          POSTGRES_DB: golf_commerce
+          POSTGRES_USER: golf_app
+          POSTGRES_PASSWORD: golf_test_only
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U golf_app -d golf_commerce"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -19,3 +39,20 @@ jobs:
         run: npm run typecheck
       - name: Build workspaces
         run: npm run build
+      - name: Apply database migrations
+        run: npm run db:migrate
+      - name: Start API and smoke test
+        run: |
+          npm run start --workspace @golf/api > /tmp/golf-api.log 2>&1 &
+          echo $! > /tmp/golf-api.pid
+          for attempt in $(seq 1 30); do
+            if curl --fail --silent http://localhost:3001/api/v1/health > /dev/null; then
+              break
+            fi
+            sleep 2
+          done
+          curl --fail http://localhost:3001/api/v1/health
+          curl --fail http://localhost:3001/api/v1/health/ready
+          curl --fail http://localhost:3001/api/v1/catalog/categories
+          curl --fail "http://localhost:3001/api/v1/catalog/products?page=1&limit=20"
+          curl --fail "http://localhost:3001/api/v1/catalog/facets"
