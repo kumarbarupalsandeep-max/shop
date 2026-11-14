@@ -1,4 +1,25 @@
-# Project Task Meter
+# Current execution snapshot — 14 November 2026
+
+**Latest repository commit:** 4fd021ec9732b73d83bd58f6ed92994fa7416f33  
+**Latest CI run:** [#43570007271](https://github.com/kumarbarupalsandeep-max/shop/actions/runs/43570007271) — in progress at last check.  
+**Latest verified failure:** Earlier CI run #43569630948 passed install, lint, typecheck, production build and migrations 001–003, but API startup failed because NestJS ValidationPipe runtime packages `class-validator` and `class-transformer` were missing. Both dependencies have now been added; the next CI run must prove the fix.
+
+| Phase | Current status | Evidence / next gate |
+|---|---|---|
+| 01 — Planning and Architecture | In progress / approval-gated | Research and decision documents exist; owner/advisor approvals and signed exit gate remain open |
+| 02 — UI/UX and Brand Design | In progress / approval-gated | Prototype and design system exist; screenshots, accessibility audit and brand/product sign-off remain open |
+| 03 — Engineering Foundation | In progress | Scaffold, build and migration checks have passed in CI; current API runtime smoke, dependency lockfile/audit, secrets scan and operational tests remain open |
+| 04 — Catalog and Storefront | In progress | Read API, migrations and customer page source committed; full API/browser/import/admin/QA verification remains open |
+| 05 — Customer Accounts and Commerce Core | Not started | Wait for Phase 04 exit and approved customer/order/checkout rules |
+| 06 — Payments, Delivery and Operations | Not started | Gateway, finance, delivery and refund policy decisions required |
+| 07 — P1 Business Modules | Requirements draft | Scope approval required |
+| 08 — Quality, Security and Production Launch | Not started | Production controls and evidence required |
+| 09 — P2 Enhancements | Not started | Post-launch scope required |
+
+**No phase is formally 100% complete.** Code presence, documentation coverage and partial CI success are tracked separately from phase completion.
+
+---
+
 
 **Repository:** https://github.com/kumarbarupalsandeep-max/shop  
 **Last updated:** 14 November 2026  
