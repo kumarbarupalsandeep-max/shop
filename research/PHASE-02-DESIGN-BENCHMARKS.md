@@ -50,3 +50,21 @@ Research date: 14 November 2026. Purpose: extract broad UX patterns for an origi
 ## Accessibility standard reference
 - W3C, Web Content Accessibility Guidelines (WCAG) 2.2 Recommendation: https://www.w3.org/TR/wcag/ — use the normative success criteria for audit; supporting quick-reference material is guidance, not a replacement for the standard.
 - WCAG 2.2 includes additional success criteria beyond WCAG 2.1. The project targets WCAG 2.2 AA as a design baseline; conformance is not claimed until evaluated.
+
+
+## Phase 02 benchmark findings — refreshed 14 November 2026
+
+### St Andrews Links Shop
+The current homepage exposes navigation for New In, Men, Women, Accessories, Kids, Brands and Gift Guide. The visible page also features editorial campaign blocks and reassurance for shipping, secure checkout, returns and customer service. These support the design choice of a strong editorial hero, curated discovery and a trust/service area. Source: https://shop.standrews.com/homepage (search result reviewed 14 Nov 2026).
+
+### Golf Mart India
+The current homepage surfaces top categories including package sets, headwear, gloves, footwear, balls and bags, plus best-selling products with price and variant-selection cues. Its shop page exposes price and category filters. This supports a category-first homepage and clear listing filters, while the project's own launch catalogue still needs owner approval. Sources: https://golfmartindia.com/ and https://golfmartindia.com/shop/ (reviewed 14 Nov 2026).
+
+### Golf Garage
+The trade-in page describes a flow for customers to contact the business or submit a form to sell used golf equipment. This supports keeping trade-in as a separate potential future workflow rather than blending it into the new-product purchase flow. It is not approved P0 scope for this project. Source: https://golfgarage.in/pages/trade-in (reviewed 14 Nov 2026).
+
+### Golfoy
+No reliable fresh page evidence was obtained in this review run. Keep the earlier access limitation; do not infer features without a direct audit.
+
+### Accessibility reference
+W3C WCAG 2.2 is the normative standard for accessibility criteria. Relevant principles include text alternatives, keyboard operability, and minimum text contrast. The prototype's source-level checklist is not a conformance assessment. Source: https://www.w3.org/TR/WCAG22/ (reviewed 14 Nov 2026).
