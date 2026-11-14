@@ -234,3 +234,12 @@ Phase 01 can be marked complete only when:
 - CBIC GST sectoral FAQs: https://cbic-gst.gov.in/hindi/sectoral-faq.html
 - MeitY, Digital Personal Data Protection Act, 2023: https://www.meity.gov.in/writereaddata/files/Digital%20Personal%20Data%20Protection%20Act%202023.pdf
 - MeitY, Digital Personal Data Protection Rules, 2025: https://www.meity.gov.in/documents/act-and-policies/digital-personal-data-protection-rules-2025-gDOxUjMtQWa
+
+
+## 13. Additional Phase 01 deliverables
+- [Golf Catalog, Attributes, Variants and SKU Standard](./planning/CATALOG-ATTRIBUTES-SKU-MATRIX.md) — draft, inventory-owner approval pending.
+- [Roles and Permissions Matrix](./planning/ROLES-PERMISSIONS-MATRIX.md) — draft, business/security approval pending.
+- [Storefront, Admin, Order and Delivery Workflow Map](./planning/WORKFLOW-MAP.md) — draft, operational policy approval pending.
+- [India Compliance and Operational Readiness](./research/INDIA-COMPLIANCE-READINESS.md) — official Gazette/CBIC/MeitY research baseline; professional review pending.
+
+These documents advance planning but do not close Phase 01 approval gates. Product-specific values, policies, tax codes and legal applicability must be confirmed by the appropriate business owner/advisor.
