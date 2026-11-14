@@ -45,14 +45,20 @@ jobs:
         run: |
           npm run start --workspace @golf/api > /tmp/golf-api.log 2>&1 &
           echo $! > /tmp/golf-api.pid
+          ready=0
           for attempt in $(seq 1 30); do
-            if curl --fail --silent http://localhost:3001/api/v1/health > /dev/null; then
+            if curl --fail --silent --connect-timeout 2 --max-time 5 http://localhost:3001/api/v1/health > /dev/null; then
+              ready=1
               break
             fi
             sleep 2
           done
-          curl --fail http://localhost:3001/api/v1/health
-          curl --fail http://localhost:3001/api/v1/health/ready
-          curl --fail http://localhost:3001/api/v1/catalog/categories
-          curl --fail "http://localhost:3001/api/v1/catalog/products?page=1&limit=20"
-          curl --fail "http://localhost:3001/api/v1/catalog/facets"
+          if [ "$ready" -ne 1 ]; then
+            cat /tmp/golf-api.log
+            exit 1
+          fi
+          curl --fail --max-time 5 http://localhost:3001/api/v1/health
+          curl --fail --max-time 5 http://localhost:3001/api/v1/health/ready
+          curl --fail --max-time 5 http://localhost:3001/api/v1/catalog/categories
+          curl --fail --max-time 5 "http://localhost:3001/api/v1/catalog/products?page=1&limit=20"
+          curl --fail --max-time 5 "http://localhost:3001/api/v1/catalog/facets"
