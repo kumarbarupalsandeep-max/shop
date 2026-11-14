@@ -50,3 +50,12 @@ A single-vendor golf e-commerce platform for the India market.
 - PostgreSQL
 
 The stack is a planning baseline, not a claim that production infrastructure is already configured.
+
+
+## Additional planning documents
+- [Golf Catalog / SKU Matrix](./planning/CATALOG-ATTRIBUTES-SKU-MATRIX.md)
+- [Roles and Permissions Matrix](./planning/ROLES-PERMISSIONS-MATRIX.md)
+- [Workflow Map](./planning/WORKFLOW-MAP.md)
+- [India Compliance Readiness](./research/INDIA-COMPLIANCE-READINESS.md)
+- [Reference Website Audit](./research/REFERENCE-WEBSITE-AUDIT.md)
+- [Task Meter](./TASK-METER.md)
