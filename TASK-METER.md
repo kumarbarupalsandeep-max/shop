@@ -300,3 +300,63 @@ Latest verification workflow after the fix: [Foundation CI run](https://github.c
 **Phase 04 planning coverage:** 1/10 workstreams reviewed with a plan artifact; implementation and verification 0/10. Not a completion percentage.
 
 **Phase 04 blockers:** actual product/brand/supplier data, licensed images, inventory rules, SKU pattern approval, finance-approved price/HSN/tax data, final category decisions, and Phase 03 authentication/RBAC and migration foundation.
+
+
+## Phase 03 — Engineering foundation verification update (14 November 2026)
+
+### Verified in GitHub Actions on the catalog foundation commit
+- npm dependency installation: passed.
+- Workspace lint: passed.
+- API and storefront TypeScript checks: passed.
+- API and storefront production build: passed.
+- PostgreSQL 16 service startup and migration runner: passed for migrations 001 and 002.
+- API smoke test: failed — the workflow's background npm launch did not leave the API listening on port 3001. The workflow was changed to start the compiled Node entrypoint directly, bound every curl request with timeouts and added startup-log diagnostics. Re-run is pending.
+
+### Current Phase 03 checklist
+| ID | Workstream | Evidence/status |
+|---|---|---|
+| P03-01 | Workspaces | Root/frontend/backend workspaces committed; install passed |
+| P03-02 | Runtime/dependencies | Node 22.11+ and npm 10.9+ baseline; install passed; lockfile and dependency review pending |
+| P03-03 | Environment/secrets | Templates committed; secret scan and production secret handling pending |
+| P03-04 | PostgreSQL | PostgreSQL 16 CI service healthy; local Docker Compose and restore testing pending |
+| P03-05 | API foundation | Build passed; live API smoke pending |
+| P03-06 | Health/readiness | Routes compiled; runtime health/readiness check pending |
+| P03-07 | Storefront foundation | Build passed on earlier commit; current responsive/browser review pending |
+| P03-08 | Migration strategy | Checksum migration runner added; migrations 001–002 applied in CI; 003 and production approval pending |
+| P03-09 | CI | Lint/typecheck/build/migrations passed; API smoke failed; direct Node startup retry pending |
+| P03-10 | Quality/security | Lint/type/build passed; npm install reported 13 audit findings (2 low, 10 moderate, 1 high); lockfile-backed audit/remediation pending |
+
+**Phase 03 is not complete.** Runtime smoke, dependency/secret scans, local setup, operational recovery and engineering sign-off remain open.
+
+## Phase 04 — Product Catalog and Storefront progress (14 November 2026)
+
+**Status:** In progress. Initial read-only catalog API, SQL migrations and customer storefront pages are committed. No live catalog data or purchasing functionality is enabled.
+
+### New implementation links
+- [Phase 04 plan](./PHASE-04-CATALOG-AND-STOREFRONT-PLAN.md)
+- [Catalog migrations](./db/migrations/)
+- [Migration runner](./backend/src/database/migrate.ts)
+- [Catalog API controller](./backend/src/catalog/catalog.controller.ts)
+- [Catalog API service](./backend/src/catalog/catalog.service.ts)
+- [Storefront homepage](./frontend/app/page.tsx)
+- [Shop listing/search page](./frontend/app/shop/page.tsx)
+- [Product detail page](./frontend/app/product/[slug]/page.tsx)
+- [Catalog import template](./catalog/import-template.csv) and [import guide](./catalog/IMPORT-GUIDE.md)
+
+| ID | Workstream | Status | Remaining |
+|---|---|---|---|
+| P04-01 | Catalog domain/SKU rules | Draft reviewed | Inventory and product-owner approval |
+| P04-02 | Database schema/migrations | Source committed; 001–002 applied in CI | Verify 003, fresh install/re-run and production migration approval |
+| P04-03 | Public catalog read API | Routes implemented | Live API smoke, query integration tests and response review |
+| P04-04 | Filter/facet contract | Attribute definition table and facets endpoint implemented | Apply facet values to product search and connect UI controls |
+| P04-05 | Admin catalog APIs | Not started | Depends on Phase 03 authentication/RBAC and audit trail |
+| P04-06 | Storefront homepage | Source implemented | Browser screenshots, responsive and design-owner QA |
+| P04-07 | Listing/search | Search/category/sort and empty state implemented | Pagination controls, facet UI and browser QA |
+| P04-08 | Product detail | Server-rendered detail and variant summaries implemented | Approved media delivery, selectable variants, cart integration later |
+| P04-09 | CSV import | Template and guide committed | Dry-run importer, validation and atomic write tests |
+| P04-10 | QA/UAT | Acceptance criteria documented | API/UI/accessibility tests, screenshots and owner sign-off |
+
+**Phase 04 implementation coverage:** starter code/docs exist for 8/10 workstreams; P04-05 and P04-10 remain unimplemented. This is not a completion percentage. Phase 04 is not 100% complete.
+
+### Data and approval boundary
+The three draft launch category records are intentionally seeded with status=draft and do not appear in public category results. No real products, brands, SKU, supplier claims, prices, tax values, stock, licensed product images or customer orders have been invented or loaded. Admin publication stays unavailable until RBAC and owner approval are complete.
