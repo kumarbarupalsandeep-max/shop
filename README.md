@@ -4,7 +4,7 @@ A single-vendor golf e-commerce platform for the India market.
 
 ## Project status
 
-- Active phase: **Phase 01 — Project Planning and Architecture**
+- Active phase: **Phase 03 — Platform and Engineering Foundation (provisional scaffold; verification pending)**
 - Completed phases: **0 / 9**
 - Business model: Single vendor
 - Fulfilment: Own delivery team (confirmed direction; operating rules pending approval)
@@ -19,7 +19,7 @@ A single-vendor golf e-commerce platform for the India market.
 |---|---|---|
 | 01 | Project Planning and Architecture | In progress |
 | 02 | UI/UX and Brand Design System | In progress |
-| 03 | Platform and Engineering Foundation | Not started |
+| 03 | Platform and Engineering Foundation | In progress — source scaffold committed; runtime/CI verification pending |
 | 04 | Product Catalog and Storefront | Not started |
 | 05 | Customer Accounts and Commerce Core | Not started |
 | 06 | Payments, Delivery, and Operations | Not started |
