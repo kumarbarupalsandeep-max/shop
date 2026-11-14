@@ -62,3 +62,7 @@ The stack is a planning baseline, not a claim that production infrastructure is 
 
 - [Technical Architecture and Decision Records](./planning/TECHNICAL-ARCHITECTURE-ADRS.md)
 - [Non-Functional Requirements](./planning/NON-FUNCTIONAL-REQUIREMENTS.md)
+
+- [Page Inventory and Acceptance Criteria](./planning/PAGE-INVENTORY-ACCEPTANCE.md)
+- [Brand and Launch Scope Decision Pack](./planning/BRAND-AND-LAUNCH-SCOPE-DECISIONS.md)
+- [Hosting, Budget and Operations Options](./planning/HOSTING-BUDGET-OPERATIONS-OPTIONS.md)
