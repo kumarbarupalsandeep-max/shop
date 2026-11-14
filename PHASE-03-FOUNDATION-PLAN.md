@@ -21,7 +21,7 @@ Create a repeatable local development foundation for the customer web workspace,
 | P03-10 | Engineering quality gates | Lint, typecheck, build, security/dependency checks | Partially scaffolded; execution pending |
 
 ## Local setup
-1. Install Node.js 20.11+ and npm 10+.
+1. Install Node.js 22.11+ and npm 10.9+.
 2. Copy .env.example to .env; keep local values local.
 3. Run npm install.
 4. Start PostgreSQL: docker compose up -d postgres.
