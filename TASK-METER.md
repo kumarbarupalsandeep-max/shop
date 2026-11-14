@@ -155,3 +155,34 @@ The Phase 01 workstream IDs P01-01 through P01-12 remain the formal meter. The n
 9. Technical owner compares current hosting quotes and approves budget, provider, backup, RPO/RTO, uptime and performance targets.
 10. Privacy/legal owner approves privacy notice, data purposes, retention schedule, rights handling, processors and incident obligations.
 11. Product owner approves final customer/admin page inventory, measurable acceptance tests and Phase 01 exit sign-off.
+
+
+# Phase 02 — UI/UX and Brand Design System
+**Status:** In progress — neutral design groundwork. Phase 01 business approvals remain separate and are not implied by this work.
+
+## Phase 02 meter
+| ID | Workstream | Evidence | Status |
+|---|---|---|---|
+| P02-01 | Benchmark research | [Benchmark audit](./research/PHASE-02-DESIGN-BENCHMARKS.md) | Draft complete; Golfoy inspection blocked |
+| P02-02 | Visual direction | [Tokens](./design-system/tokens.css) | Provisional; brand approval pending |
+| P02-03 | Design foundations | [Tokens](./design-system/tokens.css) | Draft complete |
+| P02-04 | Component library | [Component specification](./design-system/COMPONENT-LIBRARY.md) | Draft complete |
+| P02-05 | Storefront wireframes | [Page wireframes](./design-system/PAGE-WIREFRAMES.md) | Draft complete |
+| P02-06 | Admin wireframes | [Page wireframes](./design-system/PAGE-WIREFRAMES.md) | Draft complete |
+| P02-07 | Responsive system | [Responsive standards](./design-system/RESPONSIVE-ACCESSIBILITY.md) | Draft complete; visual testing pending |
+| P02-08 | Accessibility | [Accessibility standards](./design-system/RESPONSIVE-ACCESSIBILITY.md) | Draft complete; audit pending |
+| P02-09 | Design QA | Screenshot/annotated visual evidence | Not started |
+| P02-10 | Approval and handoff | Brand/product owner sign-off and implementation handoff | Pending |
+
+**Document/specification progress:** 8/10 workstreams have draft deliverables (80%). This is not a tested or approved design completion percentage.
+
+### Phase 02 blockers and next work
+1. Confirm legal/customer-facing brand name, logo, official palette, typography and domain.
+2. Confirm final P0 assortment and product image/content rights.
+3. Produce high-fidelity visual comps and annotated interaction states for each approved page.
+4. Run responsive screenshots and keyboard/screen-reader checks across the agreed viewport/browser matrix.
+5. Resolve accessibility findings against W3C WCAG 2.2 AA; no conformance claim until evidence exists.
+6. Obtain product-owner and brand-owner approval and complete design-to-development handoff.
+
+### Phase 01 carry-over
+Phase 01 remains approval-gated. Its documented decision list and business approvals must be closed independently; Phase 02 groundwork does not mark Phase 01 complete.
