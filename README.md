@@ -79,3 +79,11 @@ The stack is a planning baseline, not a claim that production infrastructure is 
 - [Page Wireframes](./design-system/PAGE-WIREFRAMES.md)
 - [Responsive and Accessibility Standards](./design-system/RESPONSIVE-ACCESSIBILITY.md)
 - [Design Benchmark Research](./research/PHASE-02-DESIGN-BENCHMARKS.md)
+
+
+## Phase 02 — UI/UX prototype
+- [Interactive storefront and admin prototype](./design-system/prototypes/index.html)
+- [Prototype styles](./design-system/prototypes/prototype.css)
+- [Prototype interactions](./design-system/prototypes/prototype.js)
+- [Prototype QA record and limitations](./design-system/PROTOTYPE-QA.md)
+- [Phase 02 plan](./design-system/PHASE-02-PLAN.md)
