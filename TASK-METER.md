@@ -94,7 +94,7 @@ A phase counts as complete only after deliverables, verification evidence and re
 - [x] Draft non-functional requirements for performance, availability, recovery, security, privacy, accessibility, data integrity and observability.
 - [x] Define release acceptance gates and identify service-level targets requiring business approval.
 
-**Artefact progress:** 11 of 12 Phase 01 workstreams now have draft/research artefacts. This is a documentation-progress count only; approvals, actual inventory validation and business policies remain outstanding. Formal Phase 01 completion remains pending.
+**Artefact progress:** 10 of 12 Phase 01 workstreams now have draft/research artefacts. This is a documentation-progress count only; approvals, actual inventory validation and business policies remain outstanding. Formal Phase 01 completion remains pending.
 
 ### Remaining Phase 01 blockers
 - Brand/legal identity and domain approval.
