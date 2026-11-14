@@ -47,7 +47,7 @@ jobs:
         run: npm run db:migrate
       - name: Start API and smoke test
         run: |
-          npm run start --workspace @golf/api > /tmp/golf-api.log 2>&1 &
+          node backend/dist/main.js > /tmp/golf-api.log 2>&1 &
           echo $! > /tmp/golf-api.pid
           ready=0
           for attempt in $(seq 1 30); do
