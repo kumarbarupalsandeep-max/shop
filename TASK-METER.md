@@ -60,3 +60,29 @@ A phase counts as complete only after deliverables, verification evidence and re
 - [x] Second-pass Golfoy review: customer program, gift cards, trade-in, custom products, advanced bag filters, specialist golf equipment.
 - [x] Added verified Golfoy source URLs and separated competitor claims from independent facts.
 - [x] Updated the reference-site audit with implications for scope and P1/later modules.
+
+
+## 14 November 2026 — additional Phase 01 work completed
+- [x] Draft golf category tree and category-specific attribute/variant matrix.
+- [x] Draft SKU convention, uniqueness rules and product publication checklist.
+- [x] Draft staff roles, permission matrix, API authorization rules and audit-event list.
+- [x] Draft customer, inventory, order, payment, delivery and grievance workflows.
+- [x] Rechecked the official Gazette notification for Consumer Protection (E-Commerce) Amendment Rules, 2026 and added compliance-readiness requirements.
+- [x] Added a compliance-readiness document covering consumer disclosures, grievance handling, search/sponsored placement, price reductions, invoices, imported goods, GST and DPDP staging.
+
+### Revised Phase 01 work status
+- Planning/research artefacts created: **10 of 12 workstreams have draft/research artefacts** (P01-01 through P01-06, plus draft deliverables for P01-09, P01-10 and research inputs for P01-11). P01-07, P01-08 and P01-12 still need owner decisions or sign-off; policy approvals in P01-11 remain pending.
+- Formal Phase 01 approval: **Pending**. Draft documents are not approvals.
+
+### Remaining approval / evidence gates
+1. Brand identity and domain.
+2. Confirm launch assortment: new-only vs new + pre-owned; confirm clubs/package sets.
+3. Validate category tree and SKU/variant rules against actual first-stock list.
+4. Name staff/role owners and approve permission thresholds and segregation of duties.
+5. Confirm delivery area, service hours, delivery fees/ETA, proof-of-delivery and COD cash controls.
+6. Select payment provider/methods and confirm webhook/refund/reconciliation operations.
+7. Accountant approval for GST registration, HSN, tax configuration, invoice and e-invoice applicability.
+8. Approve returns, cancellation, refund and warranty policies.
+9. Confirm hosting, storage, CDN, messaging vendors, budget and launch target.
+10. Legal/privacy review and named owner for Consumer E-Commerce Rules 2026 readiness and DPDP staged commencement.
+11. Approve page inventory, measurable acceptance criteria and Phase 01 exit sign-off.
