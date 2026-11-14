@@ -269,3 +269,34 @@ The prototype uses a fictional placeholder brand and illustrative product names/
 - Removed npm cache configuration while no lockfile exists and pushed a workflow correction.
 - [Latest CI run](https://github.com/kumarbarupalsandeep-max/shop/actions/runs/43568343313) was still in progress at the last check. No successful build is claimed yet.
 - Once CI finishes, resolve any install/type/build failures, add a reviewed lockfile and repeat verification.
+
+
+## Phase 03 — CI failure analysis and correction (14 November 2026)
+The first full GitHub Actions run reached install and typecheck successfully, then failed during Next.js build because the storefront brand link used a raw anchor for internal navigation. The source has been corrected to use next/link. The earlier run also reported 13 dependency audit findings (2 low, 10 moderate, 1 high); these are not considered resolved and require a lockfile-backed audit and remediation review.
+
+Latest verification workflow after the fix: [Foundation CI run](https://github.com/kumarbarupalsandeep-max/shop/actions/runs/43568938181). At the last check it was still in progress; no green CI claim is made. The workflow now runs lint, typecheck and build. Docker/PostgreSQL runtime, API integration, browser screenshots, accessibility and security scans remain pending.
+
+## Phase 04 — Product Catalog and Storefront (started 14 November 2026)
+**Status:** In progress — scope and implementation plan committed; no catalog API/schema/UI implementation claimed yet.
+- [Phase 04 delivery plan](./PHASE-04-CATALOG-AND-STOREFRONT-PLAN.md)
+- [Catalog attributes and SKU matrix](./planning/CATALOG-ATTRIBUTES-SKU-MATRIX.md)
+- [Page inventory and acceptance](./planning/PAGE-INVENTORY-ACCEPTANCE.md)
+- [Workflow map](./planning/WORKFLOW-MAP.md)
+- [Reference website audit](./research/REFERENCE-WEBSITE-AUDIT.md)
+
+| ID | Workstream | Current evidence | Status |
+|---|---|---|---|
+| P04-01 | Catalog domain review | Existing draft catalog/SKU matrix reviewed | Draft reviewed; owner approval pending |
+| P04-02 | Database schema/migrations | Schema design and migration gate in Phase 04 plan | Not started |
+| P04-03 | Catalog read API | Endpoint contract in Phase 04 plan | Not started |
+| P04-04 | Filter/facet contract | Category-aware filter requirements in plan | Not started |
+| P04-05 | Catalog admin APIs | Draft/review/publish requirements in plan; RBAC dependency | Not started |
+| P04-06 | Storefront home | Existing engineering placeholder only | Not started |
+| P04-07 | Category/listing/search | Page inventory and acceptance requirements | Not started |
+| P04-08 | Product detail | Page inventory and variant requirements | Not started |
+| P04-09 | Catalog import | Dry-run and duplicate-SKU requirement in plan | Not started |
+| P04-10 | Catalog QA/UAT | Acceptance criteria defined; test evidence absent | Not started |
+
+**Phase 04 planning coverage:** 1/10 workstreams reviewed with a plan artifact; implementation and verification 0/10. Not a completion percentage.
+
+**Phase 04 blockers:** actual product/brand/supplier data, licensed images, inventory rules, SKU pattern approval, finance-approved price/HSN/tax data, final category decisions, and Phase 03 authentication/RBAC and migration foundation.
