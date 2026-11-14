@@ -93,6 +93,20 @@ export class CatalogService {
     };
   }
 
+  async facets(category?: string) {
+    const categorySlug = category?.trim().slice(0, 120) || null;
+    const result = await this.database.query(
+      `SELECT ad.attribute_key, ad.label, ad.data_type, ad.allowed_values, ad.sort_order
+       FROM attribute_definitions ad
+       LEFT JOIN categories c ON c.id = ad.category_id
+       WHERE ad.status = 'active' AND ad.filterable = true
+         AND (ad.category_id IS NULL OR c.slug = $1)
+       ORDER BY ad.sort_order ASC, ad.label ASC`,
+      [categorySlug],
+    );
+    return { data: result.rows };
+  }
+
   async productBySlug(slug: string) {
     const result = await this.database.query(
       `SELECT p.id, p.slug, p.title, p.short_description, p.description, p.attributes,
