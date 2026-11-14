@@ -1,6 +1,6 @@
 # Phase 04 — Product Catalog and Storefront
 
-**Status:** In progress — requirements and implementation plan started; API, database, UI and acceptance verification pending.
+**Status:** In progress — initial database/catalog API and customer storefront pages committed; CI/API smoke verification and owner approvals pending.
 **Dependencies:** Phase 03 foundation remains open (CI build fix pushed; next CI run pending, security audit findings unresolved, runtime Docker/browser checks not yet evidenced). Phase 01 catalog/SKU matrix and Phase 02 design system remain drafts pending owner approval. Implement reversible, draft-only catalog functionality; do not publish real products or infer business policies.
 
 ## Objective
@@ -27,14 +27,14 @@ Deliver a working golf-specific catalog foundation and customer product-discover
 | ID | Workstream | Deliverable | Status |
 |---|---|---|---|
 | P04-01 | Catalog domain review | Approved product/variant/category/attribute/SKU contract | Draft reviewed; owner approval pending |
-| P04-02 | Database schema and migrations | Categories, brands, products, variants, attributes, media, price and inventory tables | Not started |
-| P04-03 | Catalog read API | Paginated list, search, category filters, product detail and category endpoints | Not started |
-| P04-04 | Filter/facet contract | Category-aware facets, sort allowlist and empty states | Not started |
+| P04-02 | Database schema and migrations | SQL migrations 001–003; checksum-checked migration runner; draft launch categories | Source committed; 001–002 applied in CI; 003 verification pending |
+| P04-03 | Catalog read API | GET categories, paginated/searchable products, product detail | Implemented; API smoke test pending |
+| P04-04 | Filter/facet contract | Filterable attribute definitions and GET facets endpoint; allowlisted title/newest sort | API metadata endpoint committed; interactive attribute filtering pending |
 | P04-05 | Catalog admin APIs | Draft create/edit, media metadata and review/publish workflow with RBAC | Not started |
-| P04-06 | Storefront home | Original, responsive category discovery and approved featured collections | Foundation placeholder only |
-| P04-07 | Category/product listing | Search, sort, pagination, filters and accessible controls | Not started |
-| P04-08 | Product detail | Media gallery, validated variant selection, price/availability and delivery info placeholders | Not started |
-| P04-09 | Catalog data import | Validated CSV template, duplicate SKU rejection and dry-run report | Not started |
+| P04-06 | Storefront home | Original responsive golf shop homepage and category discovery | Source committed; browser/screenshots and brand approval pending |
+| P04-07 | Category/product listing | Server-rendered listing with search, category filter, sort and empty states | Source committed; pagination controls, facet UI and browser QA pending |
+| P04-08 | Product detail | Server-rendered product detail, variant summaries, price/availability and policy placeholders | Source committed; media delivery, selection/cart and browser QA pending |
+| P04-09 | Catalog data import | CSV template and field/import safety guide | Documentation committed; dry-run importer/API pending |
 | P04-10 | Catalog QA and UAT | API tests, responsive screenshots, accessibility checks and catalog-owner sign-off | Not started |
 
 ## API contract proposal
@@ -86,6 +86,14 @@ Response contract:
 - Brand/legal name, domain, final visual tokens and design approver.
 - Phase 03 authentication/RBAC, migration runner and CI/security gates.
 - Hosting/object-storage choice for product images.
+
+## Implementation evidence added 14 November 2026
+- Database migrations: db/migrations/001_catalog_foundation.sql, 002_catalog_attribute_definitions.sql, 003_seed_draft_launch_categories.sql.
+- Migration runner: backend/src/database/migrate.ts; run with npm run db:migrate after PostgreSQL is available.
+- Public read API: backend/src/catalog/catalog.controller.ts and catalog.service.ts; registered through CatalogModule.
+- Customer pages: frontend/app/page.tsx, frontend/app/shop/page.tsx and frontend/app/product/[slug]/page.tsx.
+- Import template and instructions: catalog/import-template.csv and catalog/IMPORT-GUIDE.md.
+- CI has passed lint, typecheck, production build and migrations on an earlier commit. The API smoke test failed to connect to the background-started process; the workflow now starts the compiled Node entrypoint directly and uses bounded curl timeouts with startup diagnostics. A green run on the current source is still required.
 
 ## Current limitations
 This plan is a requirements-to-implementation baseline, not a completed catalog. No real product data, live pricing, stock, supplier relationship, tax advice or product imagery is created by this document. Owner decisions and test evidence are required before marking Phase 04 complete.
