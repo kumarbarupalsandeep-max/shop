@@ -186,3 +186,39 @@ The Phase 01 workstream IDs P01-01 through P01-12 remain the formal meter. The n
 
 ### Phase 01 carry-over
 Phase 01 remains approval-gated. Its documented decision list and business approvals must be closed independently; Phase 02 groundwork does not mark Phase 01 complete.
+
+
+## Phase 02 — UI/UX and Brand Design System (updated 14 November 2026)
+**Status:** In progress. A clickable visual prototype has been committed; browser rendering, screenshot-based visual QA, accessibility audit and owner approval remain open.
+
+### Newly delivered prototype
+- [Storefront and admin prototype](./design-system/prototypes/index.html)
+- [Prototype CSS](./design-system/prototypes/prototype.css)
+- [Prototype JavaScript](./design-system/prototypes/prototype.js)
+- [Prototype QA record](./design-system/PROTOTYPE-QA.md)
+
+### Updated Phase 02 task meter
+| ID | Workstream | Current evidence | Status |
+|---|---|---|---|
+| P02-01 | Benchmark research | [Updated benchmark notes](./research/PHASE-02-DESIGN-BENCHMARKS.md) | Draft complete; Golfoy evidence gap remains |
+| P02-02 | Visual direction | [Neutral fictional-brand prototype](./design-system/prototypes/index.html) and [tokens](./design-system/tokens.css) | Draft only; official brand approval pending |
+| P02-03 | Design foundations | [Tokens](./design-system/tokens.css) | Draft complete |
+| P02-04 | Component library | [Component library](./design-system/COMPONENT-LIBRARY.md) | Draft complete |
+| P02-05 | Storefront wireframes | [Clickable storefront prototype](./design-system/prototypes/index.html) | Draft prototype; page review pending |
+| P02-06 | Admin wireframes | [Admin overview prototype](./design-system/prototypes/index.html) | Draft prototype; role/workflow review pending |
+| P02-07 | Responsive system | [Responsive CSS](./design-system/prototypes/prototype.css) and [standards](./design-system/RESPONSIVE-ACCESSIBILITY.md) | CSS breakpoints drafted; real viewport QA pending |
+| P02-08 | Accessibility | [Standards](./design-system/RESPONSIVE-ACCESSIBILITY.md) and [QA record](./design-system/PROTOTYPE-QA.md) | Source checklist only; manual/automated audit pending |
+| P02-09 | Design QA | [Prototype QA record](./design-system/PROTOTYPE-QA.md) | Source-level review recorded; browser screenshots and cross-browser tests pending |
+| P02-10 | Approval and handoff | [Phase 02 plan](./design-system/PHASE-02-PLAN.md) | Pending brand/product owner inputs and sign-off |
+
+**Documentation/workstream draft coverage:** 9/10 have written or prototype evidence (90%). This is a deliverable-coverage count only, not a claim of tested completion. Formal Phase 02 completion remains blocked by visual QA, accessibility verification, brand/product owner approval and final handoff.
+
+### Current blockers
+1. Official legal/customer-facing brand name, logo, palette, typography and domain.
+2. Final P0 assortment and approved product content/image rights.
+3. Browser-rendered screenshots at 320, 375, 390, 768, 1024, 1280 and 1440 CSS px.
+4. Keyboard, screen-reader, contrast and WCAG 2.2 AA evaluation.
+5. Product owner and brand owner sign-off; final implementation handoff.
+
+### Safety boundary
+The prototype uses a fictional placeholder brand and illustrative product names/prices. Cart actions are local demo interactions only. Checkout submission, payment, authentication, order creation, inventory and admin authorization are not connected. Do not treat the prototype as production commerce.
