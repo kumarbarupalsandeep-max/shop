@@ -59,3 +59,6 @@ The stack is a planning baseline, not a claim that production infrastructure is 
 - [India Compliance Readiness](./research/INDIA-COMPLIANCE-READINESS.md)
 - [Reference Website Audit](./research/REFERENCE-WEBSITE-AUDIT.md)
 - [Task Meter](./TASK-METER.md)
+
+- [Technical Architecture and Decision Records](./planning/TECHNICAL-ARCHITECTURE-ADRS.md)
+- [Non-Functional Requirements](./planning/NON-FUNCTIONAL-REQUIREMENTS.md)
