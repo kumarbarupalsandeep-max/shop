@@ -249,3 +249,11 @@ These documents advance planning but do not close Phase 01 approval gates. Produ
 - [Technical Architecture and Decision Records](./planning/TECHNICAL-ARCHITECTURE-ADRS.md) — proposed system topology, ADRs, module boundaries, API conventions and deployment environments; engineering approval pending.
 - [Non-Functional Requirements](./planning/NON-FUNCTIONAL-REQUIREMENTS.md) — performance, availability, recovery, security, privacy, accessibility, data integrity and release gates; target values require owner approval.
 
+
+
+## 15. Page inventory, launch decisions and hosting options
+- [Page Inventory and Acceptance Criteria](./planning/PAGE-INVENTORY-ACCEPTANCE.md) — customer storefront and staff/admin page list, critical journey acceptance and admin authorization checks.
+- [Brand and Launch Scope Decision Pack](./planning/BRAND-AND-LAUNCH-SCOPE-DECISIONS.md) — brand identity and product assortment decisions, with explicit pending owner approvals.
+- [Hosting, Budget and Operations Options](./planning/HOSTING-BUDGET-OPERATIONS-OPTIONS.md) — deployment options, vendor comparison criteria, budget worksheet and operations ownership.
+
+These are planning artefacts, not proof of selected providers, approved brand assets, confirmed budgets or business sign-off.
