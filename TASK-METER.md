@@ -262,3 +262,10 @@ The prototype uses a fictional placeholder brand and illustrative product names/
 8. Record engineering sign-off.
 
 **Known boundary:** no production credentials, real customer records, payment gateway, authentication, order processing, production migrations or deployment provider has been added.
+
+
+### CI execution note — 14 November 2026
+- First Foundation CI run stopped during Node setup; install, typecheck and build steps were skipped.
+- Removed npm cache configuration while no lockfile exists and pushed a workflow correction.
+- [Latest CI run](https://github.com/kumarbarupalsandeep-max/shop/actions/runs/43568343313) was still in progress at the last check. No successful build is claimed yet.
+- Once CI finishes, resolve any install/type/build failures, add a reviewed lockfile and repeat verification.
